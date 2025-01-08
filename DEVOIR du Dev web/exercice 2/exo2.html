@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 2</title>
+</head>
+<body>
+    <header>
+        
+  <style>
+
+     html{
+          margin: 30px;
+          padding: 30px;
+        }
+ body{
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      background-color: while(255, 255, 255);
+      color: #000000;
+      }
+ section#corps{
+    font-size: 20px;
+             max-width: 1200px;
+             width: 100%;
+             margin: 20px auto;
+             margin-top: 30px;
+             background-color: #e1e1e1;
+             padding: 20px;
+             border-radius: 8px;
+             box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            }
+
+ol#\#Ecriture{
+             font-size: 1.3em;
+             padding: 68px;
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+             margin: 0em;
+             padding: 0em 5.5em 0px 6.5em;
+            }
+div#resultat1{
+             color: blue;
+             }
+
+div#resultat_2{
+              color: blue;
+              }
+
+div#resultat_3{
+            color: blue;
+              }
+
+p#resultat_4{
+            color: blue;
+            }
+
+
+
+ </style>
+ <ol id="#Ecriture">
+     <h1>EXERCICE 2</h1>
+
+     <li> Écrivez un programme qui utilise une boucle for pour afficher les nombres de 1 à 10.</li>
+     <li> Écrivez un programme qui utilise une boucle while pour calculer la somme des entiers de 1 à 100.</li>
+     <li> Écrivez un programme qui utilise une boucle do-while pour demander à l'utilisateur de deviner un nombre secret entre 1 et 100. Si la supposition est incorrecte, indiquez si le nombre secret est plus grand ou plus petit.</li>
+     <li> Écrivez un programme qui génère et affiche les premiers N termes de la séquence de Fibonacci, où N est saisi par l'utilisateur. La séquence de Fibonacci commence par 0 et 1, et chaque terme suivant est la somme des deux termes précédents.</li>
+    </ol>
+    </header>
+
+ <section id="corps">
+
+ <div id="afficheNombre">
+     <h1> Affichage des nombres de 1 à 10</h1>
+     <button type="button" onclick= "afficherNombres()">Afficher les nombres de 1 à 10</button>
+     <div id="resultat1"></div>
+ </div>
+ 
+ 
+     <div id="sommeEntier">
+         <h1>Calcule de la somme des entiers de 1 à 100.</h1>
+         <button type="button" onclick="sommeEntier()">Somme entiers de 1 à 100</button><br>
+         <div  id="resultat_2"></div>
+         
+     </div>
+
+     <div>
+      <h1> Nombre secret</h1>
+      <input id="nombreSaisi">
+      <button onclick="verifierNombre()">Vérifier</button>
+      <div id="resultat_3"></div>
+     </div>
+  
+  
+  <div>
+      <h1>Fibonacci</h1>
+      <input id="nombreTermes">
+      <button type="button" onclick="genererFibonacci()">Générer</button>
+      <p id="resultat_4"></p>       
+  </div>
+  </section>
+      
+      
+ <script src="exo2.js"></script>
+        
+    </body>
+    </html>
+    
+</body>
+</html>

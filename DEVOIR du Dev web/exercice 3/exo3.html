@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice  3</title>
+</head>
+<body>
+    <style>
+        html{
+            margin: 0px;
+            padding: 20px; 
+
+            }  
+
+    body{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-weight: normal 90%;
+        color: #111111;
+        background-color: while#fafafa;
+        padding: 0em 2.8em em 0em;
+        margin: 20;
+
+        }
+
+section#corps{
+            font-size: 20px;
+            max-width: 1200px;
+            width: 100%;
+            margin: 20px auto;
+            margin-top: 30px;
+            background-color: #e1e1e1;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            
+            }
+ p#resultat_3{
+            color: blue;
+             }
+             
+tr#resultat_1{
+            color: blue;
+             }
+
+
+             ol{
+               font-size: 28px;
+               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+               padding: 3em 5.5em 0px 5.5em;
+               margin: 3em;
+
+                }
+            
+
+    </style>
+        <div id="exercice">
+
+            <ol>
+                <h1>EXERCICE 3</h1>
+                <li> Écrivez un programme qui affiche tous les nombres premiers entre 1 et 100.</li>
+                <li> Écrivez un programme qui trouve et affiche les facteurs d'un nombre saisi par l'utilisateur.</li>
+                <li> Écrivez un programme qui calcule la moyenne des nombres positifs saisis par  l'utilisateur. Le programme doit cesser de demander des nombres lorsque l'utilisateur entre un nombre négatif.</li>
+                <li> Écrivez un programme qui génère et affiche un motif triangulaire en utilisant des étoiles. Par exemple, pour une hauteur de 5, le résultat pourrait ressembler à ceci :</li><br>
+              <ul>
+                  *<br>
+                  ***<br>
+                  *****<br>
+              </ul>
+            </ol>
+            
+        </div>
+        
+
+    <section id="corps">
+
+        <div class="estPremier">
+            <table> 
+                <h1>LES NOMBRES PREMIER DE 1 A 100 SONT : </h1>
+                <tr id="resultat_1"></tr>
+            </table>   
+        </div><br>
+        
+        
+        <div class="facteurs">
+            <h1>Les facteurs d'un nombre saisi par l'utilisateur </h1>
+        <input id="nombreSaisi">
+        <button onclick="trouverFacteurs()">Trouver</button>
+        <p id="resultat_2"></p>    
+    </div>
+
+
+        <div id="moyenne_NombrePositifs">
+            <h1>La moyenne des nombres positifs saisis par l'utilisateur </h1>
+            <input type="number" id="nombre">
+            <button onclick="calculeMoyenne()">Calculer</button>
+            <p id="resultat_3"></p>
+        
+        </div>
+        <br>
+        
+        <div id="#motif">
+            <h1>Le motif triangulaire</h1>
+            <input id="hauteur">
+            <button onclick="genererTriangle()">Générer</button>
+            <p id="resultat_4"></p>
+            
+        </div>
+            
+    <script src="exo3.js"></script>
+    </section>
+
+</body>
+</html>

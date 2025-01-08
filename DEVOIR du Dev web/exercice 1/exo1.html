@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICE 1</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="#">Exercice 1</a></li>
+                    <li><a href="../exercice 2/exo2.html"> Exercice 2</a></li>
+                    <li><a href="../exercice 3/exo3.html"> Exercice 3</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+        <style>
+            html{
+               margin: 20px;
+               padding: 20px;
+                }
+            nav div ul{
+                font-size: 30px;
+                margin: 0px;
+            }    
+
+            body{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+                 'Lucida Sans', Arial, sans-serif;
+                color: black;
+                background-color: rgb(255, 255, 255);
+            }
+            section#corps{
+            font-size: 20px;
+            max-width: 1200px;
+            width: 100%;
+            margin: 20px auto;
+            margin-top: 30px;
+            background-color: #b8b8b8;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+
+            }
+            div.\#exercice{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 1.2em;
+                margin: 50px;
+                padding: 00 2.5em 0px 3.5em;
+            }
+            
+            p.message1{
+                margin: 20px;
+            }
+            p.message2{
+                margin: 20px
+            }
+            
+            p.message_3{
+                margin: 20px;
+
+            }
+        </style>
+
+     <div class="#exercice">
+        <h3 >EXERCICE 1</h3>
+          <ol>
+            <li> Écrivez un programme qui demande à l'utilisateur son âge et affiche un message différent en fonction de l'âge :
+            </li>
+
+            <ul>
+                <li>a. Si l'âge est inférieur à 18, affichez "Vous êtes mineur."</li>
+                <li>b. Sinon, affichez "Vous êtes majeur."</li>
+            </ul>
+                <li> Écrivez un programme qui vérifie si un nombre saisi par l'utilisateur est pair ou impair. Affichez un message approprié.                            
+            </li>
+                <li> Écrivez un programme qui prend en entrée le mois actuel (sous forme de nombre) et affiche le nom du mois correspondant.
+            </li>
+
+          </ol>
+     </div>
+     
+     <section id="corps">
+
+         
+         <form class="affichage1"> 
+             <div class="label-input">
+                 <label for="age">1/ Saisir ici votre age :</label>
+                 <div class="input"><br>
+                    <input class="age" type="number" placeholder="Votre age" required>
+                <input type="submit" value="Entrer">
+                
+            </div>
+        </div>
+    </form>
+    
+    <div class="solution1">
+        <h3> Reponse :</h3>
+        <p class="message1"></p>
+    </div>
+    
+    
+    
+    <form class="affichage2"> 
+        <div class="label-input">
+            <label for="nombre">2/ Saisir ici un nombre :</label>
+            <div class="input"><br>
+                <input class="nombre"  placeholder="Entrer un nombre" required>
+        <input type="submit" value="Entrer">
+        
+    </div>
+     </div>    
+    </form>
+    
+     <div class="solution2">
+         <h3> Reponse :</h3>
+         <p class="message2"></p>
+        </div> 
+        
+        <form class="affichage_3">
+            <div class="label-input">
+                <label for="Annee"> 3/ Saisir le numero d'un mois :</label>
+                <div class="input"><br>
+                    <input class="annee" minimum="1" maximum="12" placeholder="Entrer un entier" required>
+                    <input type="submit" value="Entrer">
+                </div>
+            </div>
+        </form>
+        
+        <div class="solution_3">
+            <h3>Reponse :</h3>
+            <p  class="message_3"></p>
+        </div>
+    </section>
+        
+        <script src="exo1.js"></script>
+</body>
+</html>

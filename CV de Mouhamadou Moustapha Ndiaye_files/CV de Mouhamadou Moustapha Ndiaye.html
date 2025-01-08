@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:5500/cv/image/cv2.html -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CV de Mouhamadou Moustapha Ndiaye_files/style.css">
+    <title>CV de Mouhamadou Moustapha Ndiaye</title>
+    <link rel="stylesheet" href="cv2.css">
+    <link rel="stylesheet" href="./CV de Mouhamadou Moustapha Ndiaye_files/cv2.css">
+    <link rel="stylesheet" href="./CV de Mouhamadou Moustapha Ndiaye_files/all.min.css">
+
+</head>
+<body>
+    <div class="contour">
+      <div class="container">
+          <header>
+             <div class="photo">
+                  <img src="./CV de Mouhamadou Moustapha Ndiaye_files/pht.jpg" alt="photo" width="190">
+                     </div>
+                     <h1>MOUHAMADOU <br>MOUSTAPHA <br> NDIAYE</h1>
+                     <p><i class="fas fa-user-graduate"></i> Étudiant en Licence 2 Informatique <br><i class="fas fa-map-marker-alt"></i> TOUBA NDINDY SERIGNE FALLOU 
+                    <br><i class="fas fa-envelope"></i>  ahmetndiaye06@gmail.com <br> <i class="fas fa-phone"></i>  76 314 31 82 </p>
+           </header>
+        <section class="profile">
+                <h2><i class="fas fa-user"></i> Mon profil</h2>
+                 <p>Etudiant en Licence Informatique motivé et passionné par les technologies de l'information. 
+                        Désireux d'apprendre et de se développer dans un environnement professionnel stimulant.
+                            Capable de travailler en équipe et de s'adapter rapidement aux nouvelles situations.
+                 </p>
+        </section>
+                 <section class="details">
+                       <div class="column">
+                           <h2><i class="fas fa-graduation-cap"></i>  Formation</h2>
+                                 <p> •	Licence Informatique<br>  UNIVERSITÉ IBA DER THIAM DE THIÈS<br>2022 - 2023</p>
+                                 <p> •	Lycée SERIGNE SALIOU de MBACKE<br>Baccalauréat Scientifique<br>JUILLET 2022</p>
+
+                            <h2><i class="fas fa-briefcase"></i> Expériences professionnelles</h2>
+                                 <p> •	Observation des différentes tâches d'un service informatique.</p><br>
+                                 <p> •	Découverte des différents métiers de l'informatique.</p><br>
+                                 <p> •  Création d'un site web en HTML et CSS dans le cadre d'un projet de cours.</p>
+                       </div>
+                            
+             <div class="column">
+                            <h2><i class="fas fa-laptop-code"></i> Compétences</h2>
+                                  <p> •	Langages de programmation (notions de base) : langage c JavaScript</p>
+                                  <p> •	Langage informatique : HTML, CSS</p>
+                                  <p> •	Outlies bureautiques: Microsoft Office, Google Workspace</p>
+                        
+                            <h2><i class="fas fa-language"></i> Langues</h2>
+                                  <p> •	Français : 	(bien) <br>
+                                      •	Wolof : (langue maternelle) <br>
+                                      •	Anglais : (niveau intermédiaire)
+                                  </p>
+                                        
+                            <h2><i class="fas fa-heart"></i> Activités &amp; Centres d'intérêt</h2>
+                                   <p> • Membre du club informatique de l'université</p>
+                                   <p> • Passionné par les nouvelles technologies et l'innovation</p>
+                                   <p> • Coiffeur : professionnel</p>
+                                   <p> • Sports : football,Basketball</p>
+                      </div>
+                 </section>
+             </div>
+        </div>
+<script>
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
