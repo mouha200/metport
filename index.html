@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="container">
+            <nav class="entete">
+                <div class="logo">
+                    <div class="menu">
+                        <li><a href="#">Accueil</a> </li>
+                        <li><a href="#mane">À Propos </a> </li>
+                        <li><a href="#lima-ay">Compétences</a> </li>
+                        <li><a href="#mes-proj">Projets</a> </li>
+                        <li><a href="#contact">Contact</a> </li>
+                    </div>
+                    <div class="reseaux">
+                        <a href="https://www.facebook.com/groups/?ref=bookmarks"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.youtube.com/"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+            </nav>
+            <div class="corps">
+                <div class="C_gauche">
+                    <h1> Salut<span id="texteB"></span></h1>
+                    <h1>JE SUIS : <span id="texteDefil"></span></h1>
+                    <p>Etudiant en Licence 2 Informatique motivé et passionné par les technologies de
+                        l'information.Désireux d'apprendre et de se développer dans un environnement professionnel
+                        stimulant.Capable de travailler en équipe et de s'adapter rapidement aux nouvelles situations.
+                    </p> <br>
+                    <div class="Boutons">
+                        <a href="CV de Mouhamadou Moustapha Ndiaye_files/CV de Mouhamadou Moustapha Ndiaye.html"><button>Telecharge cv</button></a>
+                        <button onclick="">prêt</button>
+                    </div>
+                </div>
+                <div class="C_droite">
+                    <div class="g_image">
+                        <img src="image/pht.png" id="img1" width="400px">
+                        <img src="image/pht3.png" id="img2" width="400">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+        <!-- Setup and start animation! -->
+        <script>
+            var typed = new Typed('#texteDefil', {
+                strings: ["MOUHAMADOU", "MOUSTAPHA", "NDIAYE"],
+                loop: 1,
+                startDelay: 100,
+                backSpeed: 100,
+                typeSpeed: 50,
+            });
+        </script>
+        <script>
+            var typed = new Typed('#texteB', {
+                strings: ["...", "...", "..."],
+                loop: 1,
+                startDelay: 1000,
+                backSpeed: 100,
+                typeSpeed: 50,
+            });
+
+        </script>
+    </header>
+    <!-- Section À propos -->
+<section id="mane">
+    <h2>À propos de moi</h2>
+    <a href="#"> <button>Retour</button></a>
+        <div class="container">
+           <div id="propos-de-moi">
+                <p>Je suis un étudiant passionné par la création de sites interactifs et dynamiques.Mon but c'est d'etre un
+                    expert dans ces differents domaines: HTML, CSS, JavaScript et les frameworks comme React et Node.js.<br>
+                    <img src="th.png" id="logo-img"  width="80px">
+                    <img src="th1.png" id="logo-img" width="80px" >
+                    <img src="th2.png" id="logo-img" width="80px" >
+                    <img src="th3.png" id="logo-img" width="80px">
+                </p>
+            </div>
+            <div id="mane-1">
+                <img src="image/pht.png" id="mane_img" width="400px"><br>
+            </div>
+         </div>
+</section>
+
+    <!-- Section Compétences -->
+    <section id="lima-ay">
+        <div class="container">
+            <a href="#"> <button>Retour</button></a>
+
+            <h2>Mes Compétences</h2>
+            <div class="lima-ay-list">
+
+                <div class="lima-ay-list-div">
+                    <h3>HTML</h3>
+                    <p>Conception de pages web structurées et accessibles.</p>
+                    <div class="porgress">
+                        <h3>HTML <span> 90%</span></h3>
+                        <div class="bar"><div style="background-color: aliceblue; width: 90%; height: 100%; border: 1px solid  #0f172a; border-radius: 10px;"></div></div>
+                    </div>
+                </div>
+                <div class="lima-ay-list-div">
+                    <h3>CSS</h3>
+                    <p>Création de designs responsives et modernes.</p>
+                    <div class="porgress">
+                        <h3>CSS <span> 80%</span></h3>
+                        <div class="bar"><div style="background-color: aliceblue; width: 80%; height: 100%; border: 1px solid  #0f172a; border-radius: 10px;"></div></div>
+                    </div>
+                </div>
+                <div class="lima-ay-list-div">
+                    <h3>JavaScript</h3>
+                    <p>Développement d'interactivité et de logique côté client.</p>
+                    <div class="porgress">
+                        <h3> JavaScript <span>75%</span></h3>
+                        <div class="bar"><div style="background-color: aliceblue; width: 75%; height: 100%; border: 1px solid  #0f172a; border-radius: 10px;"></div></div>
+                    </div>
+                </div>
+                <div class="lima-ay-list-div">
+                    <h3>Word<span> 90%</span></h3>
+                    </h3>
+                    <div class="bar"><div style="background-color: aliceblue; width: 90%; height: 100%; border: 1px solid  #0f172a; border-radius: 10px;"></div></div>
+                    <h3>Excel<span> 60%</span></h3>
+                    </h3>
+                    <div class="bar"><div style="background-color: rgb(240, 255, 255); width: 60%; height: 100%; border: 1px solid    #0f172a;; border-radius: 10px;"></div></div>
+                    <h3>PowerPoint <span> 80%</span></h3>
+                    </h3>
+                    <div class="bar"><div style="background-color: aliceblue; width: 80%; height: 100%; border: 1px solid  #0f172a; border-radius: 10px;"></div></div>
+                </div>
+            </div>
+            </div>
+    </section><br>
+
+    <!-- Section Projets -->
+    <section id="mes-proj">
+        <div class="container">
+            <a href="#"> <button>Retour</button></a>
+            <h2>Mes Projets</h2>
+            <div id="mes-proj-list">
+                <div class="mes-proj-div">
+                    <h3>Projet 1</h3>
+                    <p>C'est un projet qui porte sur la création d'une page de HTML5 
+                    </p>
+                    <a href="HTML-5/Index.html">Voir le projet</a>
+                </div>
+                <div class="mes-proj-div">
+                    <h3>Projet 2</h3>
+                    <p>C'est un projet portant sur des exercices d'entraînement pour progresser en html5,Css et en JavaScript</p>
+                    <a href="DEVOIR du Dev web/exercice 1/exo1.html">Voir le projet</a>
+                </div>
+                <div class="mes-proj-div">
+                    <h3>Projet 3</h3>
+                    <p>C'est un projet portant sur la création d'un CV</p>
+                    <a href="CV de Mouhamadou Moustapha Ndiaye_files/CV de Mouhamadou Moustapha Ndiaye.html">Voir le projet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <a href="#"> <button>Retour</button></a>
+        <div class="container">
+            <div class="contact-info">
+                <h2>trouver moi ↩</h2>
+                <p><i class="fa fa-envelope"></i>ahmetndiaye60@gmail.com</p>
+                <p><i class="fa fa-phone"></i> Phone: 76 314 31 82</p>
+            </div>
+            <form class="contact-form">
+                <div class="input-box">
+                    <input id=sous-cract type="text" name="name" placeholder="Votre Nom" required>
+                    <input id=sous-cract type="email" name="email" placeholder="Votre Email" required>
+                </div>
+                <input id=sous-cract type="text" name="subject" placeholder="Sujet" required>
+                <textarea id=sous-cract name="message" placeholder="Message" required></textarea>
+                <button type="submit">Envoyer <i class="fa fa-paper-plane"></i></button>
+            </form>
+        </div>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    </section>
+
+</body>
+
+</html>
